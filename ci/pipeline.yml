@@ -11,7 +11,7 @@ resources:
   icon: github
   check_every: 10s
   source:
-    uri: https://github.com/tkaburagi/vault-secure-ci-pipeline.git
+    uri: https://github.com/parsh96/vaultSecure.git
     branch: master
 - name: notify
   type: slack-notification
