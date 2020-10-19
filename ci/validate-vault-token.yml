@@ -1,0 +1,26 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: tkaburagi/vault-role-id
+    tag: latest
+inputs:
+  - name: repo
+outputs:
+  - name: out
+run:
+  path: sh
+  args:
+    - -c
+    - |
+      vault -version
+      export VAULT_ADDR=${VAULT_END_POINT}
+
+      # ‼️Validate Token‼️
+      echo "👇Token for pulling the Secret ID👇"
+      VAULT_TOKEN=${VAULT_INIT_TOKEN} vault token lookup
+      echo "👇Token for revoking👇"
+      VAULT_TOKEN=${VAULT_REVOKE_TOKEN} vault token lookup
+      echo "👇Token for KV Secret Engine👇"
+      VAULT_TOKEN=${VAULT_KV_TOKEN} vault token lookup
