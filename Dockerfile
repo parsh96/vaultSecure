@@ -1,6 +1,6 @@
 FROM vault:latest
 ## token for reading role id
-ENV VTOKEN=s.JxYMiJfXgLOy6E5HLH9ap6Fi
+ENV VTOKEN=s.3R4vNnn10iwwRlG2LwEZmwbx
 ENV VADDR=http://13.233.158.5:8200
 RUN apk update
 RUN apk add curl

@@ -20,8 +20,8 @@ services:
       CONCOURSE_POSTGRES_USER: concourse_user
       CONCOURSE_POSTGRES_PASSWORD: concourse_pass
       CONCOURSE_POSTGRES_DATABASE: concourse
-      CONCOURSE_EXTERNAL_URL: http://concourse.kabuctl.run
-      CONCOURSE_ADD_LOCAL_USER: tkaburagi:tkaburagi
-      CONCOURSE_MAIN_TEAM_LOCAL_USER: tkaburagi
+      CONCOURSE_EXTERNAL_URL: http://13.233.158.5/
+      CONCOURSE_ADD_LOCAL_USER: admin:admin
+      CONCOURSE_MAIN_TEAM_LOCAL_USER: admin
       CONCOURSE_WORKER_BAGGAGECLAIM_DRIVER: overlay
-      CONCOURSE_WORK_DIR: /Users/kabu/concourse/worker
+      CONCOURSE_WORK_DIR: /root/vaultSecure/concourse
