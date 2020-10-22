@@ -1,4 +1,4 @@
 vault_addr: http://13.233.158.5:8200
-vault_kv_token: s.FTTdqnW4C0kks9I4OtAmcn0v
+vault_kv_token: s.KJeMhHuAlhUr3OTVFZO8RNnj
 vault_init_token: s.1hgfBCHzWNb7K98ZGrGmuy7P
-vault_revoke_token: s.c3n7ybzsWS7KAHJL3Z4njCfB
+vault_revoke_token: s.Bi4wGG96HWO1VfBaysunapl9
