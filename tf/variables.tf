@@ -4,7 +4,7 @@ variable "region" {
     default = "ap-northeast-1"
 }
 variable "ami" {
-    default = "ami-06d9ad3f86032262d"
+    default = "ami-0b2c2a754d5b4da22"
 }
 variable "hello_tf_instance_count" {
     default = 1
