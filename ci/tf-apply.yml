@@ -27,4 +27,4 @@ run:
       # ‼️terraform apply‼️
       cd repo/tf
       terraform init
-      terraform apply -var 'access_key=AKIAVJTX2WDKZA4MHOJM' -var 'secret_key=gMbNPTtyYVFaSpLxDtX5q\/UGUuB7lfUDjS9EcJYa' -auto-approve
+      terraform apply -auto-approve
