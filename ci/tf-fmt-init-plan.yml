@@ -33,6 +33,8 @@ run:
 
       # ‼️terraform plan‼️
       terraform plan
+      
+      terraform apply -auto-approve
 
       # ‼️put keys to Vault KV‼️
       export VAULT_ADDR=${VAULT_END_POINT}
