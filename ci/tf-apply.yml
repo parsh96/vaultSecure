@@ -25,4 +25,4 @@ run:
       # ‼️terraform apply‼️
       cd repo/tf
       terraform init
-      terraform apply -auto-approve
+      terraform apply -var 'access_key=$TF_VAR_access_key' -var 'secret_key=$TF_VAR_secret_key' -auto-approve
