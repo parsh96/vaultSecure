@@ -19,8 +19,8 @@ run:
       echo "👇LEASE ID👇"
       VAULT_TOKEN=${VAULT_KV_TOKEN} vault kv get -format=json kv/aws-keys-concourse
 
-      export TF_VAR_access_key=$(VAULT_TOKEN=${VAULT_KV_TOKEN} vault kv get -format=json kv/aws-keys-concourse | jq -r '.data.access_key')
-      export TF_VAR_secret_key=$(VAULT_TOKEN=${VAULT_KV_TOKEN} vault kv get -format=json kv/aws-keys-concourse | jq -r '.data.secret_key')
+      export TF_VAR_access=$(VAULT_TOKEN=${VAULT_KV_TOKEN} vault kv get -format=json kv/aws-keys-concourse | jq -r '.data.access_key')
+      export TF_VAR_secret=$(VAULT_TOKEN=${VAULT_KV_TOKEN} vault kv get -format=json kv/aws-keys-concourse | jq -r '.data.secret_key')
 
       echo $TF_VAR_access_key
       
