@@ -28,7 +28,7 @@ run:
       touch ~/.aws/config
       echo "[default]" > ~/.aws/config
       echo "aws_access_key_id=${TF_VAR_access}" >> ~/.aws/config
-      echo "aws_secret_access_key=${TF_VAR_secrets}" >> ~/.aws/config
+      echo "aws_secret_access_key=${TF_VAR_secret}" >> ~/.aws/config
       
       cat ~/.aws/config
       
