@@ -5,10 +5,10 @@
 
 ## Setup
 
-1. Replacing `tkaburagi/vault-role-id` to your image name for each file.
-2. Replacing `tkaburagi:tkaburagi` to your `username:password` in `docker-compose.yml`.
-3. Replacing `CONCOURSE_WORK_DIR` and `CONCOURSE_EXTERNAL_URL` to your local environemts in `docker-compose.yml`.
-4. Replcaing `https://github.com/tkaburagi/vault-secure-ci-pipeline.git` to your cloned repo in `pipeline.yml`.
+1. Replacing `parshva/vault-role-id` to your image name for each file.
+2. Replacing `parshva:parshva` to your `username:password` in `docker-compose.yml`.
+3. Replacing `CONCOURSE_WORK_DIR` and `CONCOURSE_EXTERNAL_URL` to your local environments in `docker-compose.yml`.
+4. Replacing `https://github.com/parsh96/vaultSecure.git` to your cloned repo in `pipeline.yml`.
 
 * Vault AWS Setting
 ```shell script
@@ -98,15 +98,3 @@ $ fly -t localhost set-pipeline -p snapshots-demo -c ci/pipeline.yml ci/vars.yml
 $ fly -t localhost unpause-pipeline --pipeline snapshots-demo
 ```
 
-## To-Do
-* ~~use_limit & TTL for each secret~~
-* ~~ACL & Sentinel for KV~~
-* ~~Dockerfile~~
-* ~~Replace Role-id for the Docker image~~
-* ~~Revoke the key~~
-* ~~E2E test~~
-* ~~Webhook~~
-
-## Slide & Demo
-* [Slide](https://docs.google.com/presentation/d/1oWaj9dpbG3zbwmtW-_DMvyZuR2flju-DtrNNG775jYA/edit?usp=sharing)
-* [Demo Video](https://www.youtube.com/watch?v=02fbiq7cfO8&list=PL81sUbsFNc5bi7mvrZ4GgSl5Iq8WTlPgx)
